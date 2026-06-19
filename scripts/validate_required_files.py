@@ -12,6 +12,7 @@ REQUIRED_FILES = [
     "SECURITY.md",
     "CHANGELOG.md",
     ".gitignore",
+    "docs/using-the-skill.md",
     "skill/SKILL.md",
     "skill/workflow.md",
     "skill/operating_principles.md",

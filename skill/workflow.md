@@ -27,6 +27,15 @@ At minimum, try to capture:
 
 Run the modules that match the available evidence. For a full quarterly filing, run every scanner. For an earnings release, prioritize revenue quality, adjusted metric quality, cash-flow quality, and presentation. For an investor presentation, emphasize metric definitions, reconciliation quality, and consistency with filed statements.
 
+If the user requests a named scanner, run that scanner directly and use other modules only when they are necessary to triangulate the finding. If the user requests "all scanners" or "full scan", run all 11 modules and list unavailable tests caused by missing documents.
+
+For common groups:
+
+- Revenue-to-cash: revenue quality, customer balance quality, working-capital quality, cash-flow quality.
+- Margin sustainability: expense timing and capitalization, income-statement presentation, adjusted metric quality, asset quality.
+- Balance-sheet risk: asset quality, liability completeness, working-capital quality, related-party and off-balance-sheet review.
+- Disclosure comparability: disclosure change detection plus any scanner affected by the changed disclosure.
+
 ## 4. Triangulate
 
 For each signal, ask:

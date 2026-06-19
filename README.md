@@ -32,8 +32,17 @@ Example prompts:
 - "Focus only on revenue quality and receivables. I want the evidence table and management questions."
 - "Turn this analysis into a public case study. Keep it non-accusatory and avoid investment recommendations."
 - "Build a ratio table for profit versus operating cash flow over the last eight quarters."
+- "Run all 11 scanner modules and produce a full memo."
+- "Run only the Revenue Quality Scanner and Customer Balance Quality Scanner."
+- "Run the adjusted metric, income-statement presentation, and cash-flow scanners on this earnings release."
+
+For detailed scanner descriptions, document-upload guidance, and invocation examples, see [docs/using-the-skill.md](docs/using-the-skill.md).
 
 ## Recommended Inputs
+
+Minimum useful input:
+
+- One current quarterly report, interim financial statement package, earnings release, or investor presentation.
 
 Best results require:
 
@@ -47,23 +56,51 @@ Best results require:
 
 When documents are incomplete, the skill should run a limited scan and state the limitations.
 
+For a full memo, upload the current quarter, prior quarter, prior-year quarter, latest annual report, earnings release, investor presentation, adjusted metric reconciliations, and earnings call transcript where available.
+
 ## Scanner Overview
 
 The scanner modules cover:
 
-- Revenue quality.
-- Customer balance quality.
-- Expense timing and capitalization.
-- Asset quality.
-- Liability completeness.
-- Income-statement presentation.
-- Adjusted metric quality.
-- Cash-flow quality.
-- Working-capital quality.
-- Disclosure change detection.
-- Related-party and off-balance-sheet review.
+- Revenue quality: tests whether reported revenue is supported by customer balances, cash conversion, contract disclosures, and management commentary.
+- Customer balance quality: reviews receivables, contract assets, deferred revenue, customer advances, allowances, and collection indicators.
+- Expense timing and capitalization: assesses whether costs are recognized currently or deferred into assets in a way that affects margins or future expense burden.
+- Asset quality: reviews inventory, receivables, contract assets, goodwill, intangibles, deferred tax assets, investments, and recoverability indicators.
+- Liability completeness: reviews accruals, provisions, warranties, refunds, deferred revenue, contingencies, leases, debt, and other obligations.
+- Income-statement presentation: evaluates classification, labels, subtotals, nonrecurring items, and whether recurring performance is clear.
+- Adjusted metric quality: reviews adjusted EBITDA, adjusted EPS, free cash flow, constant-currency metrics, and reconciliation quality.
+- Cash-flow quality: tests whether operating cash flow supports reported earnings after working-capital timing and unusual cash items.
+- Working-capital quality: reviews receivables, inventory, payables, accruals, contract balances, and cash conversion cycle signals.
+- Disclosure change detection: compares current and prior disclosures for definition changes, missing tables, segment changes, and reduced granularity.
+- Related-party and off-balance-sheet review: reviews disclosed related-party transactions, guarantees, commitments, receivable sales, leases, supplier financing, and unconsolidated arrangements.
 
 Each scanner defines required inputs, financial statement areas to inspect, red-flag patterns, calculations, cross-statement triangulation, benign explanations, escalation logic, evidence standards, management questions, and output format.
+
+## Invoking Scanners
+
+Run everything:
+
+```text
+Use Quarterly Red Flag Scanner on these documents. Run all 11 scanner modules and create a full earnings-quality red-flag memo.
+```
+
+Run a focused scanner:
+
+```text
+Use only the Revenue Quality Scanner. Compare revenue growth with receivables, contract assets, deferred revenue, and operating cash flow.
+```
+
+Run a group:
+
+```text
+Run the revenue, customer balance, working-capital, and cash-flow scanners. I want to know whether revenue is converting into cash.
+```
+
+Run a limited scan:
+
+```text
+I only have the earnings release and investor presentation. Run the relevant limited scan and state missing evidence.
+```
 
 ## Interpreting Results
 

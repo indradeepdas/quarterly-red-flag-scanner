@@ -79,6 +79,28 @@ Use scanner files in `scanners/` for the detailed tests:
 
 Use principle files in `principles/` when a scanner requires deeper reasoning.
 
+Scanner invocation rules:
+
+- If the user asks for "all scanners", "full scan", "full memo", or "all 11 modules", run every scanner with available evidence and state skipped tests caused by missing documents.
+- If the user names one scanner, run that scanner deeply and do not add unrelated scanner findings unless they are needed for cross-statement triangulation.
+- If the user names a group, run only that group and any directly supporting scanner needed to interpret the requested area.
+- If only an earnings release or investor presentation is supplied, run a limited scan and prioritize revenue quality, adjusted metric quality, income-statement presentation, cash-flow quality if cash flow is disclosed, and missing evidence.
+- If prior-period documents are available, run disclosure change detection whenever definitions, segments, metrics, tables, or accounting policies appear to have changed.
+
+Common scanner groups:
+
+- Revenue-to-cash review: revenue quality, customer balance quality, working-capital quality, cash-flow quality.
+- Margin sustainability review: expense timing and capitalization, income-statement presentation, adjusted metric quality, asset quality.
+- Balance-sheet risk review: asset quality, liability completeness, working-capital quality, related-party and off-balance-sheet review.
+- Public case-study review: relevant scanners plus legal-safety and public-output passes.
+
+Suggested user-facing prompts:
+
+- "Run all 11 scanners and produce a full earnings-quality memo."
+- "Run only the Revenue Quality Scanner and Customer Balance Quality Scanner."
+- "Run the adjusted metric, presentation, and cash-flow scanners on this earnings release."
+- "Run a limited scan because I only have the investor presentation."
+
 ### 5. Evidence Table
 
 For each finding capture:
