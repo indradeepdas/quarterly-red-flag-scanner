@@ -1,6 +1,6 @@
 # Disclaimer
 
-Quarterly Red Flag Scanner is a structured document-review aid. It is not investment advice, audit advice, accounting advice, tax advice, legal advice, valuation advice, or a regulatory-compliance opinion.
+Creative Accounting Scanner is a structured document-review aid. It is not investment advice, audit advice, accounting advice, tax advice, legal advice, valuation advice, or a regulatory-compliance opinion.
 
 The skill is not a fraud detector. It does not accuse any company, officer, employee, auditor, underwriter, lender, investor, or other party of wrongdoing.
 

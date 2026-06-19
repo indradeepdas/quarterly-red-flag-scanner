@@ -1,6 +1,6 @@
-# Quarterly Red Flag Scanner
+# Creative Accounting Scanner
 
-Quarterly Red Flag Scanner is an open-source Codex skill for structured earnings-quality review of listed-company quarterly reports. It helps users identify reporting patterns that may warrant further review across revenue quality, expense timing, asset quality, liability completeness, adjusted metrics, and operating cash-flow quality.
+Creative Accounting Scanner is an open-source Codex skill for structured earnings-quality review of listed-company quarterly reports. It helps users identify reporting patterns that may warrant further review across revenue quality, expense timing, asset quality, liability completeness, adjusted metrics, and operating cash-flow quality.
 
 The skill is designed for analysts, investors, credit reviewers, journalists, students, and finance teams who need a disciplined way to read quarterly disclosures. It is most useful when the user supplies current and prior-period filings, earnings releases, interim financial statements, investor presentations, or management commentary.
 
@@ -27,7 +27,7 @@ Place the repository where Codex can access it, then ask Codex to use the skill 
 
 Example prompts:
 
-- "Use Quarterly Red Flag Scanner to do a quick scan of this quarterly report."
+- "Use Creative Accounting Scanner to do a quick scan of this quarterly report."
 - "Retrieve the latest 10-Q, latest 10-K, and current earnings release for this ticker, then run all 11 scanners."
 - "Create a full earnings-quality memo for this quarter and compare it with the prior-year quarter."
 - "Focus only on revenue quality and receivables. I want the evidence table and management questions."
@@ -55,7 +55,7 @@ Preferred retrieval order:
 Example:
 
 ```text
-Use Quarterly Red Flag Scanner for AAPL. Retrieve the latest 10-Q, prior-year quarter 10-Q, latest 10-K, and current earnings release from primary sources, then run all 11 scanners and create a red-flag memo.
+Use Creative Accounting Scanner for AAPL. Retrieve the latest 10-Q, prior-year quarter 10-Q, latest 10-K, and current earnings release from primary sources, then run all 11 scanners and create a red-flag memo.
 ```
 
 ## Recommended Inputs
@@ -101,7 +101,7 @@ Each scanner defines required inputs, financial statement areas to inspect, red-
 Run everything:
 
 ```text
-Use Quarterly Red Flag Scanner on these documents. Run all 11 scanner modules and create a full earnings-quality red-flag memo.
+Use Creative Accounting Scanner on these documents. Run all 11 scanner modules and create a full earnings-quality red-flag memo.
 ```
 
 Run a focused scanner:

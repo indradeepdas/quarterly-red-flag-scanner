@@ -1,6 +1,6 @@
 # Codex-Native Filing Retrieval
 
-Quarterly Red Flag Scanner should work in two modes:
+Creative Accounting Scanner should work in two modes:
 
 1. User-supplied documents.
 2. Codex-retrieved public filings and related disclosures.
@@ -138,7 +138,7 @@ Use a limited scanner set when only an earnings release, presentation, or 8-K is
 Full retrieval and review:
 
 ```text
-Use Quarterly Red Flag Scanner for Microsoft. Retrieve the latest 10-Q, latest 10-K, current earnings release, investor presentation, and prior-period filings from primary sources, then run all 11 scanners.
+Use Creative Accounting Scanner for Microsoft. Retrieve the latest 10-Q, latest 10-K, current earnings release, investor presentation, and prior-period filings from primary sources, then run all 11 scanners.
 ```
 
 Ticker-only quick scan:

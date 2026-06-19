@@ -1,4 +1,4 @@
-# Using Quarterly Red Flag Scanner
+# Using Creative Accounting Scanner
 
 This guide explains what to upload, what each scanner module does, and how to ask Codex to run one scanner, a selected group, or the full scanner set.
 
@@ -90,7 +90,7 @@ If retrieval is not available in the current Codex session, upload the documents
 Use this when uploading a quarterly report plus prior periods:
 
 ```text
-Use Quarterly Red Flag Scanner on these documents. Run all 11 scanner modules and produce a full earnings-quality red-flag memo with an evidence table, scorecard, management questions, and limitations.
+Use Creative Accounting Scanner on these documents. Run all 11 scanner modules and produce a full earnings-quality red-flag memo with an evidence table, scorecard, management questions, and limitations.
 ```
 
 Short version:
